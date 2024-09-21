@@ -5,7 +5,6 @@ import { I18nProvider } from "@lingui/react";
 import { messages as enMessages } from "./locales/en/messages";
 import { messages as csMessages } from "./locales/cs/messages";
 
-import Inbox from "./components/Inbox.tsx";
 import App from "./App.tsx";
 
 import "./index.css";
@@ -20,7 +19,6 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <I18nProvider i18n={i18n}>
       <App />
-      <Inbox />
     </I18nProvider>
   </StrictMode>
 );

@@ -20,7 +20,10 @@ export default function Inbox({ name }: { name: string }) {
         <Trans>
           See all <a href="/unread">unread messages</a>
           {" or "}
-          <a onClick={markAsRead}>mark them</a> as read.
+          <button type="button" onClick={markAsRead}>
+            mark them
+          </button>{" "}
+          as read.
         </Trans>
       </p>
 
